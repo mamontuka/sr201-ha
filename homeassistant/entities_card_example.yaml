@@ -1,0 +1,20 @@
+## by Oleh Mamont (C) 2025
+## free for use and modification
+##
+## thats example of homeassistant entities card for SR-201 lanrelay
+## cut and put it in entities card text editor field
+
+##### cut below #####
+type: entities
+entities:
+  - entity: switch.i5_power
+    secondary_info: none
+    name: PC on/off
+    icon: mdi:desktop-classic
+  - entity: switch.i5_speakers
+    name: Speakers
+    secondary_info: none
+    icon: mdi:dolby
+state_color: true
+
+##### cut before #####
