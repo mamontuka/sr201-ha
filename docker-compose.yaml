@@ -1,0 +1,11 @@
+version: '3'
+services:
+  ritar-bms:
+    build: 
+      context: .
+    restart: unless-stopped
+    privileged: true
+    volumes:
+      - ./config.yaml:/workdir/config.yaml
+      - /dev:/dev
+  

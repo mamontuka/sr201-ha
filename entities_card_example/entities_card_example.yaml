@@ -1,0 +1,8 @@
+##### cut below #####
+type: entities
+entities:
+  - entity: switch.sr201_1_rl_1
+  - entity: switch.sr201_1_rl_2
+  - entity: switch.sr201_2_rl_1
+  - entity: switch.sr201_2_rl_2
+##### cut before #####
