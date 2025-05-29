@@ -33,7 +33,7 @@ options:
   mqtt_port: 1883
   mqtt_username: "homeassistant"
   mqtt_password: "your_mqtt_password"
-  relay_poll_interval: 2
+  relay_poll_interval: 3
 schema:
   relay_boards:
     - device_id: str
