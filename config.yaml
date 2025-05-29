@@ -1,6 +1,6 @@
 name: "SR-201 LAN Relay"
 description: "Home Assistant Addon for SR-201 LAN TCP Relay boards"
-version: "1.0"
+version: "1.1"
 slug: "sr201"
 url: "https://github.com/mamontuka/sr201-ha"
 init: false
