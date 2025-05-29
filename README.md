@@ -11,7 +11,7 @@ Instalation : </br>
 
 Homeassistant entities card configuration example : https://github.com/mamontuka/sr201-ha/tree/main/entities_card_example </br>
 
-**UPDATE 1.1 - improving stability, fixes.** </br>
+**UPDATE 1.1 - improving stability, fixes, default poll interval 3 sec** </br>
 
 Addon config explanation : </br>
 
