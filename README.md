@@ -11,6 +11,8 @@ Instalation : </br>
 
 Homeassistant entities card configuration example : https://github.com/mamontuka/sr201-ha/tree/main/entities_card_example </br>
 
+**UPDATE 1.1 - improving stability, fixes.** </br>
+
 Addon config explanation : </br>
 
     # Board 1 ID for prefix to entities unique ID, like "sr201_1_rl_1"
