@@ -27,7 +27,7 @@ MQTT_BROKER   = config["mqtt_broker"]
 MQTT_PORT     = config.get("mqtt_port", 1883)
 MQTT_USERNAME = config.get("mqtt_username")
 MQTT_PASSWORD = config.get("mqtt_password")
-POLL_INTERVAL = config.get("relay_poll_interval", 2)
+POLL_INTERVAL = config.get("relay_poll_interval", 3)
 
 def send_tcp_command(ip, port, cmd, retries=2):
     for attempt in range(retries):
