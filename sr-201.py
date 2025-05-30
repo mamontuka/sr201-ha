@@ -27,19 +27,19 @@ MQTT_BROKER   = config["mqtt_broker"]
 MQTT_PORT     = config.get("mqtt_port", 1883)
 MQTT_USERNAME = config.get("mqtt_username")
 MQTT_PASSWORD = config.get("mqtt_password")
-POLL_INTERVAL = config.get("relay_poll_interval", 3)
+POLL_INTERVAL = config.get("relay_poll_interval", 2)
 
-def send_tcp_command(ip, port, cmd, retries=2):
+def send_tcp_command(ip, port, cmd, retries=3):
     for attempt in range(retries):
         try:
-            with socket.create_connection((ip, port), timeout=2) as s:
+            with socket.create_connection((ip, port), timeout=5) as s:
                 s.sendall(cmd.encode())
                 data = s.recv(32).decode().strip()
                 if data:
                     return data
         except Exception as e:
             print(f"[ERROR] TCP command to {ip}:{port} failed on attempt {attempt+1}: {e}")
-        time.sleep(0.5)
+        time.sleep(1)
     return ""
 
 def get_relay_states(board):
