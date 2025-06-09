@@ -85,7 +85,7 @@ def announce_device_and_switches(client, board):
         "identifiers": [board["device_id"]],
         "name": friendly_name,
         "model": "SR-201",
-        "manufacturer": "China-manufactured"
+        "manufacturer": "China"
     }
 
     for i in range(num_relays):
